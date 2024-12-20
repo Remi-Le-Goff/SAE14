@@ -508,3 +508,143 @@ header {
         background-color: var(--secondary);
     }
 }
+
+
+
+/* Mobile : Écrans inférieurs à 576px */
+@media (max-width: 576px) {
+    /* Header: alignement des éléments */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .div {
+        position: static; /* Image placée au-dessus */
+        margin: 0 auto 10px auto; /* Ajout d'espace sous l'image */
+    }
+
+    .div img {
+        width: 120px; /* Taille réduite pour mobile */
+        height: auto;
+    }
+
+    .div1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .div1 p {
+        flex-direction: column; /* Les liens en colonne */
+        gap: 10px;
+    }
+
+    .div1 p a {
+        font-size: 20px; /* Taille du texte réduite */
+        padding: 8px 12px;
+    }
+
+    /* Assurez que le bouton "À propos" est bien visible */
+    .connexion {
+        position: static;
+        margin: 20px auto 0 auto; /* Centré sous "Boutique" */
+        text-align: center;
+    }
+
+    .connexion button {
+        font-size: 20px; /* Taille du bouton réduite */
+        padding: 10px 20px;
+    }
+
+    .legends {
+        display: none;
+    }
+
+    .legend-details {
+        display: none;
+    }
+
+}
+
+/* Tablettes : Écrans inférieurs à 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .div {
+        position: static; /* Image placée au-dessus */
+        margin: 0 auto 15px auto; /* Ajout d'espace sous l'image */
+    }
+
+    .div img {
+        width: 150px; /* Taille réduite pour tablettes */
+        height: auto;
+    }
+
+    .div1 {
+        flex-direction: column;
+        gap: 25px; /* Augmenter l'espacement entre les liens */
+    }
+
+    .div1 p {
+        flex-direction: column; /* Les liens en colonne */
+        gap: 15px;
+    }
+
+    .div1 p a {
+        font-size: 22px; /* Taille du texte ajustée */
+        padding: 10px 15px;
+    }
+
+    /* Assurez que le bouton "À propos" est bien visible */
+    .connexion {
+        position: static;
+        margin: 20px auto 0 auto; /* Centré sous "Boutique" */
+        text-align: center;
+    }
+
+    .connexion button {
+        font-size: 22px; /* Taille ajustée */
+        padding: 12px 25px;
+    }
+}
+
+/* Ordinateurs portables : Écrans inférieurs à 1024px */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .div img {
+        width: 200px; /* Taille légèrement réduite */
+        height: auto;
+    }
+
+    .div1 {
+        flex-direction: column; /* Réorganisation en colonne */
+        gap: 20px;
+    }
+
+    .div1 p a {
+        font-size: 24px; /* Taille des liens ajustée */
+        padding: 10px 20px;
+    }
+
+    /* Maintenir le bouton "À propos" sous "Boutique" */
+    .connexion {
+        position: static;
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+
+    .connexion button {
+        font-size: 24px; /* Taille légèrement réduite */
+        padding: 15px 30px;
+    }
+}
+
+
+
